@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    /* overflow: hidden; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background-image: url("../Assets/Images/background.jpg");
+    background-size: 100% 100%;
+}
+
+#gameScreen 
+{
+    height: 430px;
+    width: 1000px;
+    border: 2px solid rgb(70, 74, 116);
+    overflow: hidden;    
+}
+
+#intro
+{
+    position: absolute;
+    top: 0px;
+    right: 30px;
+}
+
+/* Player formally known as Puffer: */
+#puffer {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);  
+
+    height: 100px;
+    width: auto;
+}
+
+/* Fish Facing Right */
+#fishR1
+{
+    width: 300px;
+    height: auto;
+
+    position: relative;
+    left: -300px;
+    top: -35px;
+
+    animation: moveRight 5s infinite;
+}
+#fishR2
+{
+    width: 300px;
+    height: auto;
+
+    position: relative;
+    left: -600px;
+    top: 100px;
+    
+
+    animation: moveRight 3s infinite;
+}
+#fishR3
+{
+    width: 300px;
+    height: auto;
+
+    position: relative;
+    left: -920px;
+    top: 250px;
+
+    animation: moveRight 4s infinite;
+}
+
+/* Fish Facing Left */
+#fishL1
+{
+    width: 300px;
+    height: auto;
+
+    position: relative;
+    right: 300px;
+    bottom: 90px;
+
+    animation: moveLeft 3s linear infinite ;
+}
+#fishL2
+{
+    width: 300px;
+    height: auto;
+
+    position: relative;
+    right: 600px;
+    bottom: -50px;
+
+    animation: moveLeft 2.5s linear infinite ;
+}
+#fishL3
+{
+    width: 300px;
+    height: auto;
+
+    position: relative;
+    right: 900px;
+    bottom: -230px;
+
+    animation: moveLeft 5s linear infinite ;
+}
+
+#score
+{
+    height: 20px;
+    width: 90px;
+    background-color: antiquewhite;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+#checkpoint
+{
+    position: absolute;
+    bottom: 10px;
+
+    height: 70px;
+    width: 100px;
+    background-color: blue;
+}
+
+@keyframes moveLeft
+{    
+    /*Start to finish of animation*/ 
+    0% {left:1300px} 
+    100% {left: -900px}
+}
+
+@keyframes moveRight
+{
+    0% {left: -300px;}
+    100% {left: 1300px}
+}

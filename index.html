@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- All the important stuff -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripting 2:ME3 Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" type="image/png" href="Assets/Images/fish1.png">
+</head>
+
+<body style="font-family: 'typepunk', sans-serif;">
+    <!-- Refrencing W3Schools -->
+    <div class="topImage"></div>
+    
+    <div class="header"> 
+        <div class="portfolioHeading">
+            <div style="font-family: 'punkbabe', sans-serif;" class="heading text-center">
+                <h1>Portfolio Portfolio Portfolio Portfolio Portfolio Portfolio Portfolio Portfolio Portfolio</h1>        
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax"></div>
+
+    <!-- Refrenced W3Schools and Bootstrap for structure: -->
+    <div class="container-fluid formatContent">
+        <!-- Collumns: -->
+        <div class="row content">
+            <!-- First Collumn -->
+            <!-- Linkes/Buttons for each tab for my portfolio: -->
+            <div class="buttons col-2 d-flex flex-column p-3">
+                <h3 class="buttonText">Content</h3>
+                <button class="btn mb-2" onclick="showTab('home')">HOME</button>
+                <button class="btn mb-2" onclick="showTab('about')">ABOUT ME</button>
+                <button class="btn mb-2" onclick="showTab('fishGame')">GAMES</button>
+                <button class="btn mb-2" onclick="showTab('art')">ART PORTFOLIO</button>
+                <button class="btn mb-2" onclick="showTab('contact')">CONTACT INFORMATION</button>
+            </div>
+                
+
+        <!-- Refrenced W3Schools and Bootstrap: -->
+        <!-- Middle Collumn -->
+            <div class="information col-7 text-center p-2">
+                <!-- Main Page - Welcome, Example Project, Ovweview -->
+                <div class="tab active" id="home">
+                    <h1 id="homeHeading">
+                    WELCOME TO MY PORTFOLIO
+                    </h1>
+                    <h3>It's a-FISH-ial, My name is Valentina and I am a 2nd year game design student at SAE! I enjoy making games as an experience for a player! 
+                    <br> More specifically:                     
+                    </h3>
+                    <!-- gap -->
+                    <p> </p>
+                    <h5 id="makeBlue">Asset Design</h5>                    
+                    
+                    <p> </p>
+                    <h5 id="makeBlue">Game Development</h5>  
+                    <p> </p>
+                    <h4>Feel free to explore my games and art portfolio!                     
+                    </h4>
+
+                    
+                </div>
+
+                <!-- Short Description, Background, skills ect -->
+                <div class="tab" id="about">
+                    <h2 id="makeBlue">
+                        About Me                       
+                    </h2>
+                    <!--  -->
+                    <h4>
+                        Studying Game Desgin, huh?                        
+                    </h4>
+                    <p> </p>
+                    <h5>
+                        I grew intrested in persuing a career in game design when I realized I can create any experience I wanted. 
+                        Some insporation comes from some of my favorite games such as Nier Automata,Life is Strange and Detroit:Become Human. 
+                        I notice I am drawn to narrative focused games that leave a memorable mark so this is what I,too, wish to create.
+                        This leads me to my main point: Skills. <br>
+                        Skills that come with not only making a game fun but maknig a 
+                        game memorable aswell is what I focus developing my skills on.                     
+                    </h5>
+                    <p> </p>
+                    <h5 id="makeBlue">
+                        My Intrests in Game Design Include:                                        
+                    </h5>
+                    <h4>
+                        -Concept Design for Charecters and Environments <br>
+                        -Establishing Visual Themes <br>
+                        -Creating Game Related Assets <br>
+                        -Experimenting with different themes and artstyles to achive the tone I want <br>                         
+                    </h4>
+                    <h5 id="makeBlue">
+                        My Skills Include:                                        
+                    </h5>
+                    <h4>
+                        -Scripting [C#] <br>
+                        -2D Asset Design <br>
+                        -Unity<br>                      
+                    </h4>
+                    
+                </div>
+
+                <!-- Games Tab -->
+                <div class="tab" id="fishGame">
+                    <h2 id="makeBlue">
+                        Web Games
+                    </h2>
+                    <!-- The most peakest of peak games i tell you: -->
+                    <h3 > Link to the most epic and cool game ever made by humanity: 
+                        <a href="Puffer/puffer.html" class="pufferText">Play Puffer</a>
+                    </h3>                                     
+                    <img src="Assets/Images/puffer.png" alt="fish">                    
+                </div>
+
+                <!-- Art Portfolio: Own stuff so no refrences -->
+                <div class="tab" id="art">                    
+                    <h2 id="makeBlue">
+                        Art Portfolio Information
+                    </h2>
+                    <h2>Art Portfolio</h2>
+                    <img src="Assets/Images/portfolio2.png" alt="portfolio2">
+                    <p> Reaching (2025) <br> I draw this last year for an Asset Design module last year. I wanted to focus on getting the perspective right 
+                                and this was a challange with the statues. This would be the final level to a game. The player is chased by a creature which they are
+                                finally facing. </p>
+                    <img src="Assets/Images/portfolio1.jpg" alt="portfolio1">
+                    <p> Loading Screen (2025) <br> This piece was done done in the same module. I wanted to focus on composition and contrast. This was intended as a loading  
+                                    screen for a game using the main character holding crows</p>
+                    <img src="Assets/Images/portfolio3.png" alt="portfolio3">
+                    <p> Faces (2025) <br>In a cave full of faces and eyes watching the player must reach the other side. This "level screenshot" is meant to put focus on the faces that watch
+                        the player to take focus off the creature chasing them. 
+                    </p>
+                    <img src="Assets/Images/portfolio4.png" alt="portfolio4">
+                    <p>Some Concept work relating to the previous image. <br> This creature will be what is chasing/following the player. I wanted to focus on
+                        the idea of a shaddow or silhouette rahter than a detailed character.
+                    </p>
+                    <img src="Assets/Images/portfolio5.png" alt="portfolio5">
+                    <p>A scene from the potential game</p>
+                    <img src="Assets/Images/portfolio6.png" alt="portfolio6">
+                    <p>Concepts for a loading screen</p>
+                    <img src="Assets/Images/portfolio7.png" alt="portfolio7">
+                    <p> Charecter Design: Seraphina</p>
+
+                <!-- Specifically contact information and maybe github link -->
+                </div>    
+                <div class="tab" id="contact">
+                    <h2 id="makeBlue">
+                        Aditional Contact Information:
+                    </h2>                                       
+                    <p>If you have any inquiries, feel free to contect me on at the following links:</p>
+                    <h6>Email: nunesvalentina1@gmail.com</h6>
+                    <h6>                        
+                        <a href="https://www.linkedin.com/in/valentina-nunes-77267736b/">
+                            LinkedIn
+                        </a>
+                    <h6>                        
+                        <a href="https://github.com/tinaxvenus">
+                            GitHub
+                        </a>
+                    </h6>
+                </div>
+                
+            </div>
+
+            <!-- Third Collumn -->
+            <div class="images col-3 text-center p-2">
+                <h4>Small Fact About Me:</h4>
+                <h6>My favorite band is Radiohead</h6>
+                <a href="https://radiohead.com">
+                    <img id="radiohead" src="Assets/Images/radiohead.jpg" alt="Radiohead Website">
+                </a>
+
+                <!-- <img id="tabImage" src="Assets/Images/radiohead.jpg" alt="tab image"> -->
+                <h5>Valentina Nunes Portfolio</h5>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Scrpit Links -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="JavaScript/script.js"></script>
+</body> 
+
+    </html>
+
+

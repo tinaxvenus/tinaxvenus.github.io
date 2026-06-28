@@ -1,0 +1,178 @@
+/* 
+establsihing the fonts I want to use. Might not use them all but they are here now
+Refrencing W3Schools:
+*/
+@font-face 
+{
+    font-family: 'punkbabe';
+    src: url('../Assets/Fonts/punkbabe/punkbabe.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face 
+{
+    font-family: 'typepunk';
+    src: url('../Assets/Fonts/typepunk/Typepunk-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ===========================CSS CODE============================ */
+
+body 
+{ 
+    margin: 0;
+    background: #000000;
+    
+    /* Text colour for website overall: */
+    color: #e4a972;
+}
+
+
+/* Fishes: not sure if you can tell but im keeing the fish theme going, 
+no clue why i didnt even know i liked fishes this much
+ */
+.topImage
+{
+    height: 55vh;
+    background-image: url("../Assets/Images/fishTop.jpg");
+    background-size: cover;
+    background-position: top center; 
+    z-index: 60;
+}
+
+/* Seperated from image as I want them to stay visible */
+.header 
+{
+    position: sticky;
+    top: 0;
+    z-index: 20;    
+}
+
+.heading
+{
+    color: white;
+}
+.portfolioHeading 
+{
+    background-color: #222655;
+    text-align: center;
+}
+
+.formatContent
+{
+    position: relative;
+}
+/* Refrencing Jim Nielson for transparent images:- nevermind, no longer doing that as its been upgraded */
+.parallax {
+    position: fixed;
+    top: 15vh; /* So it doesnt start at top */
+    left: 0;
+    width: 100%;
+    height: 200vh;
+    background-image: url("../Assets/Images/test.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: -1;
+}
+.content 
+{
+    margin-top: 20px;
+    position: relative;
+    z-index: 10;
+}
+.information img {
+    position: sticky;
+    top: 0;
+    z-index: 20; 
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.buttonText
+{
+    text-align: center;
+}
+
+.buttons 
+{
+    position: sticky;
+    top: 20%;
+    z-index: 5;
+    color: #4e74b7;
+    overflow: hidden;  
+}
+/* Didnt know i could do this */
+.buttons button {
+    color: #e4a972;
+}
+
+/* Thank you again Jim: It finally works i cry*/
+.buttons::before 
+{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../Assets/Images/buttonBackground.jpg");
+    background-position: center;
+    background-size: cover;    
+    opacity: 0.2;
+    /* buttons dont work- Fix */
+    z-index: -1;
+}
+
+.images 
+{
+    position: sticky;
+    align-self: flex-start;
+}
+
+/* Images in image div: They overlap now, epic*/
+.images img 
+{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hashtags i forgor */
+#radiohead
+{
+    border: 2px solid #222655;
+    box-shadow: 0 0 10px #222655 ;
+}
+
+#makeBlue
+{
+    color:#4e74b7;
+}
+
+#homeHeading
+{
+    /* color: #000000; */
+    animation: welcomeText 3s infinite;
+}
+
+
+@keyframes welcomeText {
+    0% 
+    {
+        color:#4e74b7; 
+    }
+
+    50% 
+    {
+        color: rgb(216, 118, 26) ; 
+    }
+
+    100% 
+    {
+        color: #4e74b7; 
+    }
+}
+
